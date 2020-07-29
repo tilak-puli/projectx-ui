@@ -1,1 +1,10 @@
-<p>home works!</p>
+<div>
+  <h2>Login</h2>
+  <label>Username or Email:
+    <input [(ngModel)]="loginService.userCredentials.usernameOrEmail" placeholder="name"/>
+  </label>
+  <label>Password:
+    <input [(ngModel)]="loginService.userCredentials.password" placeholder="name"/>
+  </label>
+  <button (click)="loginService.login()">Login</button>
+</div>
